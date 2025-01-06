@@ -1,0 +1,12 @@
+{
+  "home_page": {
+        "my_name": "Chinmaya Kumar Nayak",
+        "invalid_name": "!!@#$12333",
+        "my_email": "chinmayakumar8249@gmail.com",
+        "invalid_email": "chinmayakumar8249@com.gmail",
+        "my_number": "8249117340",
+        "invalid_number": "824911734000",
+        "message": "testing purpose"
+  }
+}
+
