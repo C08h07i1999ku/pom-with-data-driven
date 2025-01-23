@@ -26,6 +26,8 @@ def setup(browser):
     driver.maximize_window()
     return driver
 
+# ********************* This part is for editing the html report **********************
+
 # Hook for adding environment info in html report
 def pytest_configure(config):
     config.stash[metadata_key]['Project Name'] = 'Soul website automation'
