@@ -1,5 +1,6 @@
 import pytest
 from selenium import webdriver
+from pytest_metadata.plugin import metadata_key
 
 
 
@@ -25,3 +26,12 @@ def setup(browser):
     driver.maximize_window()
     return driver
 
+# Hook for adding environment info in html report
+def pytest_configure(config):
+    config.stash[metadata_key]['Project Name'] = 'Soul website automation'
+    config.stash[metadata_key]['QA Name'] = 'Chinmaya Kumar Nayak'
+
+# Hook for modify or delete environment info in html report
+@pytest.mark.optionalbook
+def pytest_metadata(metadata):
+    metadata.pop('Plugins',None)
