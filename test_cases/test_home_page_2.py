@@ -2,7 +2,7 @@ import pytest
 import openpyxl
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from base_pages.Home_page import Home_page
+from Page_Objects.Home_page import Home_page
 import time
 from utilities.read_config import Configurations
 from utilities.custom_logger import Log_Maker

@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from base_pages.Home_page import Home_page
-from base_pages.About_Us_Page import About_Us_Page
+from Page_Objects.Home_page import Home_page
+from Page_Objects.About_Us_Page import About_Us_Page
 import time
 from utilities.read_testdata import Read_testdata
 from utilities.custom_logger import Log_Maker

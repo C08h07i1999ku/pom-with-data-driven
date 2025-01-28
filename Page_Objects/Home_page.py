@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from base_pages.About_Us_Page import About_Us_Page
+from Page_Objects.About_Us_Page import About_Us_Page
 
 class Home_page:
 
