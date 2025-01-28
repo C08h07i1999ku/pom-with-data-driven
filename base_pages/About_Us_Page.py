@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from base_pages.Base_Page import BasePage
+from Base.Base_Page import BasePage
 
 class About_Us_Page(BasePage):
 
