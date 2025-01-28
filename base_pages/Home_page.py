@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from base_pages.About_Us_Page import About_Us_Page
 
 class Home_page:
 
@@ -38,6 +39,7 @@ class Home_page:
     def click_on_about_us(self):
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, self.about_us_xpath))).click()
 
+
     def logo_verify(self):
         logo = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, self.company_logo_xpath)))
         assert logo.is_displayed(), "Logo is not visible"  # Message when the logo is not visible
@@ -63,7 +65,9 @@ class Home_page:
             EC.presence_of_element_located((By.XPATH, self.write_your_meassage_xpath))).send_keys(my_message)
 
 
-
+    def navigate_to_about_us_page(self):
+        WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, self.about_us_xpath))).click()
+        return About_Us_Page(self.driver)
 
 
 
