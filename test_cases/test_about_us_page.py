@@ -27,7 +27,7 @@ class Test_About_us_page:
 
 
     def test2_click_on_read_more(self,setup):
-        self.logger.info("*************************Test Case 8 passed*************************")
+        self.logger.info("*************************Test Case 14 passed*************************")
         self.driver = setup
         self.driver.get(self.Home_page_url)
         # creating the object of the Home page class
