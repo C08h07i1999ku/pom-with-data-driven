@@ -23,9 +23,5 @@ class About_Us_Page(BasePage):
     def click_on_read_more_button(self):
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, self.read_more_xpath))).click()
 
-
-    # def scroll_into_read_more_button2(self):
-    #     self.scroll_into_view(self.read_more_class)
-
     def click_on_read_more_button2(self):
         self.element_click(self.read_more_xpath)
