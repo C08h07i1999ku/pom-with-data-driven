@@ -25,7 +25,7 @@ class BasePage:
         element = self.get_element(locator)
         return element.is_displayed()
 
-    #  Declaring a method for getting the text of an web element
+    #  Declaring a method for retrieveing the text of an web element
     def retrieve_text_of_element(self,locator):
         element = self.get_element(locator)
         return element.text
