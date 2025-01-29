@@ -11,7 +11,7 @@ class About_Us_Page(BasePage):
     # locators of this page
     read_more_xpath = "//span[@class='readmoreBtn']"
 
-    # declaring the constructor
+    # Invoking the constructor from base class
     def __init__(self,driver):
         super().__init__(driver)
 
