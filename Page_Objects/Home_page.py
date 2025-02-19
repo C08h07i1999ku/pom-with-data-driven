@@ -18,11 +18,11 @@ class Home_page:
     your_contact_number_xpath = "//input[@placeholder='Your Contact Number']"
     write_your_meassage_xpath = "//textarea[@id='msg-text']"
 
-# declaring the constructor
+    # declaring the constructor
     def __init__(self,driver):
         self.driver = driver
 
-# all the actions those will have to be performed
+    # all the actions those will have to be performed
     def scroll_down_to_the_elements(self):
         vision_mission = WebDriverWait(self.driver,10).until(EC.presence_of_element_located((By.XPATH,self.our_vision_mission_xpath)))
         self.driver.execute_script("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});",vision_mission)
