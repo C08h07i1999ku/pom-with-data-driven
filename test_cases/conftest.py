@@ -22,7 +22,7 @@ def setup(browser,request):
     elif browser == "edge":
         driver = webdriver.Edge()
     else:
-        raise ValueError("Unsuported browser")
+        raise ValueError("Unsupported browser")
     driver.maximize_window()
     driver.get("https://soulltd.in/")
     request.cls.driver = driver
