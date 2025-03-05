@@ -12,7 +12,7 @@ from utilities.excel_utils_2 import ExcelUtils
 class Test_home_page_3:
     logger = Log_Maker.log_gen()
     name = "Chinmaya"
-    emailid="xyz@gmail.com"
+    emailid = "xyz@gmail.com"
     contact_number = 8249117340
     message = "hii"
 
