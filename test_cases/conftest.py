@@ -13,7 +13,7 @@ def browser(request):
 
 
 @pytest.fixture()
-def setup(browser):
+def setup(browser,request):
     global driver
     if browser == "chrome":
         driver = webdriver.Chrome()
@@ -24,6 +24,8 @@ def setup(browser):
     else:
         raise ValueError("Unsuported browser")
     driver.maximize_window()
+    driver.get("https://soulltd.in/")
+    request.cls.driver = driver
     return driver
 
 # ********************* This part is for editing the html report **********************
