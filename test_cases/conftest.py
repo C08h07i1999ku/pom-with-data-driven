@@ -2,8 +2,6 @@ import pytest
 from selenium import webdriver
 from pytest_metadata.plugin import metadata_key
 
-
-
 def pytest_addoption(parser):
     parser.addoption("--browser",action="store",default="chrome",help="Specify the browser")
 
