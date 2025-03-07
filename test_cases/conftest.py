@@ -1,6 +1,9 @@
 import pytest
 from selenium import webdriver
 from pytest_metadata.plugin import metadata_key
+from utilities.read_config import Configurations
+
+Home_page_url = Configurations.get_url()
 
 def pytest_addoption(parser):
     parser.addoption("--browser",action="store",default="chrome",help="Specify the browser")
@@ -22,7 +25,7 @@ def setup(browser,request):
     else:
         raise ValueError("Unsupported browser")
     driver.maximize_window()
-    driver.get("https://soulltd.in/")
+    driver.get(Home_page_url)
     request.cls.driver = driver
     return driver
 
